@@ -7,13 +7,13 @@ classes = []
 with open("classes.txt", "r") as f:
     classes = f.read().splitlines()
 
-cap = cv2.VideoCapture('7.mp4') # (1-7).mp4
+cap = cv2.VideoCapture('1.mp4') # (1-7).mp4
 font = cv2.FONT_HERSHEY_PLAIN
 colors = np.random.uniform(0, 255, size=(100, 3))
 
 while True:
     #_, img = cap.read() # для видео (0-вебкамера)
-    img = cv2.imread('test17.jpg') # для фото  test(1-15)
+    img = cv2.imread('test1.jpg') # для фото  test(1-15)
     height, width, _ = img.shape
 
     blob = cv2.dnn.blobFromImage(img, 1/255, (416, 416), (0,0,0), swapRB=True, crop=False)
