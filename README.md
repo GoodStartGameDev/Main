@@ -14,8 +14,8 @@
 ![image](https://user-images.githubusercontent.com/99166734/208081872-a8bad70b-899a-4125-b99e-a0878ea2be08.png)
 
 - Разархивировать файлы в удобном месте и запустить решение Main.sln
-  В нём открыть PythonApplication1.py
-  Добавить новое окружение 
+В нём открыть PythonApplication1.py
+Добавить новое окружение 
   ![1](https://user-images.githubusercontent.com/99166734/208082843-57875983-1443-469b-9f09-321680a68952.png)
   ![2](https://user-images.githubusercontent.com/99166734/208083167-b051845e-0bb6-40cd-be1b-32cdd35c4e2f.png)
 Дождаться загрузки новой переменной окружения
