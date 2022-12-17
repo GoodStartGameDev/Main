@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-net = cv2.dnn.readNet('new3.weights', 'yolov3-tiny-obj.cfg')
+net = cv2.dnn.readNet('1_last.weights', '1.cfg')
 
 classes = []
 with open("classes.txt", "r") as f:
@@ -52,7 +52,7 @@ while True:
             confidence = str(round(confidences[i],2))
             color = colors[i]
             cv2.rectangle(img, (x,y), (x+w, y+h), color, 2)
-            cv2.putText(img, label + " " + confidence, (x, y-10), font, 0.9, (0,0,30), 2)
+            cv2.putText(img, label + " " + confidence, (x, y-10), font, 0.9, (255,255,255), 2)
 
     cv2.imshow('Image', img)
     key = cv2.waitKey(1)
